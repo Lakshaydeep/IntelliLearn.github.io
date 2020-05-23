@@ -1,0 +1,27 @@
+.tagline > p {
+  display: inline;
+  font-size: 15px;
+  font-family: "Montserrat";
+}
+
+.icon {
+  margin-left: 27px;
+}
+.tagline > p {
+  margin-left: 10px;
+  color: white;
+}
+.topbar {
+  background-color: #2b2e3b;
+  height: 200px;
+}
+a {
+  color: rgb(203, 189, 226);
+}
+
+#white:hover {
+  color: white;
+}
+#white {
+  color: rgb(203, 189, 226);
+}
