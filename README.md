@@ -2,5 +2,4 @@
 
 ## Intelli learn
 
-[What is Intelli Learn](https://aaditay.github.io/Apps/intelli.html)
-![]("./images/intellilearn_screenshot.png")
+[What is IntelliLearn)(https://aaditay.github.io/Apps/intelli.html)
