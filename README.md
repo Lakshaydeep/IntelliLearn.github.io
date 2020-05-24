@@ -1,3 +1,6 @@
-## Intelli learn 
+ 
+## 🚧🚧🚧🚧   WORK UNDER PROGRESS 🚧🚧🚧🚧
 
-For more info about intelli learn : checkout [this](https://aaditay.github.io/Apps/intelli.html)
+
+## Intelli learn
+[What is IntelliLearn)(https://aaditay.github.io/Apps/intelli.html)
