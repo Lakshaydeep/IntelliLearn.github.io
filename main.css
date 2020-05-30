@@ -16,7 +16,7 @@
   height: 200px;
 }
 a {
-  color: rgb(203, 189, 226);
+  color: rgb(226, 220, 220);
 }
 
 #white:hover {
@@ -24,4 +24,10 @@ a {
 }
 #white {
   color: rgb(203, 189, 226);
+  font-size: 1.5em;
+}
+
+#margin {
+  margin-top: 500 px;
+  margin-bottom: 50 px;
 }
