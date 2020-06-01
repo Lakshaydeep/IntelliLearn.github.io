@@ -1,0 +1,135 @@
+.tagline > p {
+  display: inline;
+  font-size: 15px;
+  font-family: "Montserrat";
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.login h1 {
+  font-size: 23px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: absolute;
+  margin-left: 90px;
+}
+.login h1 > img {
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-top: 4px;
+}
+.login p {
+  margin-left: 4px;
+}
+.login {
+  width: 350px;
+  height: 420px;
+  background: #000;
+  color: white;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  display: flex;
+  display: none;
+  padding-left: 20px;
+}
+.login > form {
+  margin-top: 70px;
+}
+.login input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.login input[type="text"],
+input[type="Password"] {
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: white;
+  font-size: 16px;
+}
+.login input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #fb2525;
+  color: white;
+  font-size: 18px;
+  border-radius: 40px;
+  width: 300px;
+  margin-left: 8px;
+}
+
+.login input[type="submit"]:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+.login a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgray;
+}
+div > a.close {
+  font-size: 30px;
+  margin-left: 310px;
+  position: absolute;
+  transform: rotate(45deg);
+  text-decoration: none;
+  outline: none;
+  color: black;
+}
+#button {
+  position: absolute;
+  font-size: 20px;
+  margin-left: 1270px;
+  margin-bottom: 90px;
+  color: white;
+  text-decoration: none;
+}
+
+.icon {
+  margin-left: 27px;
+}
+.tagline > p {
+  margin-left: 10px;
+  color: white;
+}
+.topbar {
+  background-color: #2b2e3b;
+  height: 200px;
+}
+
+.downbar {
+  background-color: #2b2e3b;
+  height: 50px;
+  color
+}
+a {
+  color: rgb(226, 220, 220);
+}
+
+#white:hover {
+  color: white;
+}
+#white {
+  color: rgb(203, 189, 226);
+  font-size: 1.5em;
+}
+
+#margin {
+  margin-top: 500 px;
+  margin-bottom: 50 px;
+}
+
+ 
