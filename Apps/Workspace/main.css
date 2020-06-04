@@ -1,0 +1,38 @@
+#velocity {
+    position: absolute;
+    top: 500px;
+  }
+  #velocity > p,
+  #velocity input {
+    display: inline;
+  }
+  button {
+    position: absolute;
+    top: 600px;
+    left: 100px;
+  }
+  #ball {
+    background: linear-gradient(rgb(21, 206, 175), rgb(21, 154, 206));
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 400px;
+    left: 50px;
+  }
+  #scale {
+    position: absolute;
+    right: 2vw;
+    top: 10vh;
+  }
+  #scale table {
+    border-width: 3px;
+    border-color: black;
+  }
+  #scale div {
+    border-color: #000000;
+    border-width: 1px;
+    padding: 3px;
+    border-style: solid;
+
+    display: inline;

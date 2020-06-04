@@ -38,7 +38,7 @@
         margin: 50px;
         font-size: 1.5rem;
       }
-      #Progect>a{
+      #Progect > a {
         text-decoration: none;
         display: inline;
         color: rgb(128, 131, 130);
@@ -51,16 +51,20 @@
       button {
         margin-top: 10px;
       }
-      #drop{
-        position:absolute;
-        margin-top:130px;
-
-      
+      #drop {
+        position: absolute;
+        margin-top: 130px;
       }
-      #d-lab{
+      #d-lab {
         padding: 70px;
         position: relative;
-        margin-left:300px ;
+        margin-left: 300px;
+      }
+      #kinematics {
+        padding: 50px;
+        background: linear-gradient(rgb(68, 17, 161), rgb(127, 17, 161));
+        border-radius: 30%;
+        font-size: 1.5em;
       }
     </style>
   </head>
@@ -90,23 +94,7 @@
       </nav>
     </div>
     <h2 class="card" align="center">DotPhy</h2>
-    <div id="drop" class="btn-group dropright" >
-      <button
-        style="height: 160px;"
-        type="button"
-        class="btn btn-secondary dropdown-toggle"
-        data-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false"
-      ></button>
-      <div id="Progect" class="dropdown-menu">
-        <a class="dropdown-item" href="#">Friends</a></br>
-        <a href="#">Live Progect</a></br>
-        <a href="#">Share Progect</a></br>
-        <a href="#">New Progect </a>
-      </div>
-    </div>
-    <div id="d-lab" class="card" style="height: 400px; width: 700px; background-color: teal;"></div>
+    <a href="./kinematics.html" id="kinematics"> Kinematics </a>
   </body>
   <script
     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

@@ -1,15 +1,48 @@
-.tagline > p {
-  display: inline;
-  font-size: 15px;
-  font-family: "Montserrat";
+:root {
+  --primary-color: #2b2e3b;
 }
-body {
+* {
   margin: 0;
   padding: 0;
-  background-size: cover;
-  background-position: center;
-  font-family: Arial, Helvetica, sans-serif;
 }
+/* --------------------NavBar -------------- */
+
+nav {
+  background-color: var(--primary-color);
+  height: 200px;
+}
+nav ul {
+  display: flex;
+  list-style-type: None;
+  position: relative;
+  width: 100%;
+  top: 50px;
+}
+nav a {
+  font-family: "Raleway";
+  color: rgba(255, 255, 255, 0.308);
+  text-decoration: none;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  nav a {
+    font-size: 10px;
+  }
+}
+nav a:hover {
+  transition: 0.4s;
+  color: white;
+  text-decoration: none;
+}
+nav li {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+/*-----------------------------------------------*/
+/* ---------------Login Stuff -------------------- */
+
 .login h1 {
   font-size: 23px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -98,38 +131,47 @@ div > a.close {
   text-decoration: none;
 }
 
-.icon {
-  margin-left: 27px;
+.nav-links {
+  display: block;
 }
-.tagline > p {
-  margin-left: 10px;
-  color: white;
-}
-.topbar {
-  background-color: #2b2e3b;
+
+/* --------------------------------------------------------*/
+
+.footer {
+  background-color: var(--primary-color);
   height: 200px;
 }
-
-.downbar {
-  background-color: #2b2e3b;
-  height: 50px;
-  color
+.footer ul {
+  display: flex;
+  list-style-type: None;
+  position: relative;
+  width: 100%;
+  top: 50px;
 }
-a {
-  color: rgb(226, 220, 220);
+.footer a {
+  font-family: "Raleway";
+  color: rgba(255, 255, 255, 0.308);
+  text-decoration: none;
+  font-size: 30px;
 }
 
-#white:hover {
+@media only screen and (max-width: 768px) {
+  .footer a {
+    font-size: 10px;
+  }
+}
+.footer a:hover {
+  transition: 0.4s;
   color: white;
+  text-decoration: none;
 }
-#white {
-  color: rgb(203, 189, 226);
-  font-size: 1.5em;
-}
-
-#margin {
-  margin-top: 500 px;
-  margin-bottom: 50 px;
+.footer li {
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
- 
+.news > div {
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
