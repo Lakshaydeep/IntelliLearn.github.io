@@ -6,6 +6,18 @@
   #velocity input {
     display: inline;
   }
+
+#acc{
+  position:absolute;
+  top: 550px;
+
+}
+#acc > p,
+#acc input {
+  display: inline;
+}
+
+
   button {
     position: absolute;
     top: 600px;
@@ -25,10 +37,7 @@
     right: 2vw;
     top: 10vh;
   }
-  #scale table {
-    border-width: 3px;
-    border-color: black;
-  }
+  
   #scale div {
     border-color: #000000;
     border-width: 1px;
