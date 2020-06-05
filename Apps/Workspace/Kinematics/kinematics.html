@@ -6,26 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="./main.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="ball"></div>
-    <div id="velocity">
-      <p>Velocity :</p>
-      <input type="text" placeholder="1" id="velocity-inp" />
-      <p>m/s</p>
-      <p id="velocity-param"></p>
-    </div>
+    <div id="inputs">
+      <div id="velocity">
+        <p>Velocity :</p>
+        <input type="text" placeholder="1" id="velocity-inp" />
+        <p>m/s</p>
+      </div>
 
-    <div id="acc">
-      <p>
-        Acceleration
-      </p>
-      <input type="text" placeholder="-9.8" id="acc-inp" />
-      <p>ms<sup>2</sup></p>
-      <p id="acc-param"></p>
+      <div id="acc">
+        <p>
+          Acceleration
+        </p>
+        <input type="text" placeholder="-9.8" id="acc-inp" />
+        <p>ms<sup>2</sup></p>
+      </div>
     </div>
-
     <button>Experiment</button>
+    <div id="param-list">
+      
+      <p>Acc</p>
+      <p id="acc-inp"></p>
+       
+     
+      <p>Velocity</p>
+      <p id="velocity-inp"></p>
+      
+       
+      <p>Distance</p>
+      <p id= "distance-inp"></p>
+       
+       
+      <p>Time</p>
+       </div>
+    </div>
 
     <div id="scale">
       Scale 1m : <input type="text" placeholder="10" id="scale-inp" />px

@@ -1,3 +1,5 @@
+/* --------------INputs -----------*/
+
 #velocity {
   position: absolute;
   top: 500px;
@@ -15,7 +17,7 @@
 #acc input {
   display: inline;
 }
-
+/*--------------------------------------*/
 button {
   position: absolute;
   top: 600px;
@@ -31,6 +33,8 @@ button {
   left: 50px;
   z-index: 999;
 }
+
+/* ----------Scale -----------------*/
 #scale {
   position: absolute;
   right: 2vw;
@@ -43,4 +47,15 @@ button {
 
 #scale input {
   width: 20px;
+}
+
+/* -----------Param - List ---------------*/
+#param-list {
+  position: absolute;
+  top: 20vh;
+  right: 10vw;
+  background: linear-gradient(rgb(16, 172, 138), rgb(16, 84, 172));
+  padding: 30px;
+  border-radius: 10%;
+  font-family: "Raleway";
 }
