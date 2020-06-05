@@ -1,4 +1,5 @@
-let action = document.querySelector("button");
+let action = document.querySelector("#action");
+let reset = document.querySelector("#reset");
 
 let velocityInp = document.querySelector("#velocity-inp");
 let accInp = document.querySelector("#acc-inp");
@@ -41,6 +42,10 @@ function do_experiment() {
   let pos = 400;
   let pos2 = 5;
   function moveUp() {
+    reset.addEventListener("click", function () {
+      ball.style.top = "400px";
+      clearInterval(goUp);
+    });
     let curr_distance = 0;
     velocity = velocity + acc;
     pos = pos - velocity;
@@ -59,6 +64,10 @@ function do_experiment() {
     }
   }
   function moveDwn() {
+    reset.addEventListener("click", function () {
+      ball.style.top = "400px";
+      clearInterval(goDwn);
+    });
     velocity = velocity + acc;
     pos = pos - velocity;
 

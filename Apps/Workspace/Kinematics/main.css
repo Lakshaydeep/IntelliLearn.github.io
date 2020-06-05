@@ -18,10 +18,15 @@
   display: inline;
 }
 /*--------------------------------------*/
-button {
+#action {
   position: absolute;
   top: 600px;
   left: 100px;
+}
+#reset {
+  position: absolute;
+  top: 600px;
+  left: 200px;
 }
 #ball {
   background: linear-gradient(rgb(21, 206, 175), rgb(21, 154, 206));
