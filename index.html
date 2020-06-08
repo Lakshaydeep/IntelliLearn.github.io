@@ -1,117 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
-    <title>Intelli-Learn- Home</title>
-
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <title>Intelli Learn</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <input type="checkbox" id="check" />
+    <!--header area start-->
     <nav>
-      <h1>
-        <div class="badge badge-light">Intelli</div>
-        <div class="badge badge-dark">Learn</div>
-      </h1>
-
-      <ul>
-        <li>
-          <a href="./Apps/Workspace/workspace.html"> WorkSpace </a>
-        </li>
-        <li>
-          <a href="./Apps/Learn-Concepts/learning.html"> Learn Concepts</a>
-        </li>
-        <li>
-          <a href="#">Talk to Experts </a>
-        </li>
-      </ul>
+      <div class="left-areas">
+        <h3>
+          <label for="check">
+            <i class="fas fa-bars" id="sidebar_btn"></i>
+          </label>
+          <div class="badge badge-light">
+            Intelli
+          </div>
+          <div class="badge badge-dark">Learn</div>
+        </h3>
+      </div>
     </nav>
+    <!--header area end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+      <a href="./Apps/Workspace/workspace.html"
+        ><i class="fas fa-desktop"></i><span>Workspace</span></a
+      >
+      <a href="./Apps/Workspace/#"
+        ><i class="fas fa-broadcast-tower"></i><span>Project Live </span></a
+      >
 
-    <div class="news">
-      <div style="margin: 50px;">
-        <h5>Searching for scalar dark matter</h5>
-        <p class="card-subtitle text-muted">By www.phys.org</p>
-        <p>
-          Researchers at University of Delaware, University of Arizona and
-          Haverford College have recently introduced the idea of searching for
-          scalar dark matter using compact acoustic resonators. Their paper,
-          published in Physical ...
-          <a
-            href="https://phys.org/news/2020-05-scalar-dark-compact-mechanical-resonators.html"
-          >
-            Read.
-          </a>
-        </p>
-      </div>
+      <a href="./Apps/Learn-Concepts/#"
+        ><i class="fa fa-book"></i><span>Learn concepts</span></a
+      >
+      <a href="#"><i class="far fa-comments"></i><span>Talk to expert</span></a>
 
-      <div>
-        <h5>Intelli Learn</h5>
-        <p class="text-muted">A project by Aaditay In Collab with Vishal</p>
-        <p class="card-text" style="width: 70%; margin-top: 30px;">
-          Intelli Learn is a project Coming soon . Intelli Learn is something
-          like a physics lab available on one's device where we can take some
-          tempelated and customize the enviroment ...
-          <a href="https://aaditay.github.io/Apps/intelli.html"> Read </a>
-        </p>
-      </div>
-
-      <div>
-        <h5>
-          Connecting the quantum internet
-        </h5>
-        <p class="text-muted">News from www.phys.org</p>
-        <p class="card-text" style="width: 70%; margin-top: 30px;">
-          UC Santa Barbara researchers continue to push the boundaries of LED
-          design a little further with a new method that could pave the way
-          toward more efficient and versatile LED display and lighting
-          technology.
-          <a
-            href="https://phys.org/news/2020-06-metasurface-methods-lasers.html"
-          >
-            Read
-          </a>
-        </p>
-      </div>
+      <a href="#"><i class="fas fa-handshake"></i><span>Join us</span></a>
     </div>
+    <!--sidebar end-->
 
-    <div></div>
-
-    <div class="footer">
-      <ul>
-        <li>
-          <a href="Contact.html"> Contact us</a>
-        </li>
-        <li>
-          <a href="#">Join us</a>
-        </li>
-        <li>
-          <a href="#">For devlopers</a>
-        </li>
-      </ul>
-    </div>
+    <div class="content"></div>
 
     <div class="login">
-      <h1>Create a new account <img src="./images/images (1).jpg" /></h1>
+      <h1>Create an Acount<img src="images (1).jpg" /></h1>
       <form>
         <p>Username</p>
-        <input type="text" name="" placeholder="Enter Username" />
+        <p id="username_message"></p>
+        <input id="username" type="text" name="" placeholder="Enter Username" />
         <p>Password</p>
         <input type="password" name="" placeholder="Enter Password" />
         <p>Confirm Password</p>
         <input type="password" name="" placeholder="Enter Password" />
-        <input type="submit" name="" value="Sign Up " />
-        Already a member ? <a>Login </a>
+
+        <input type="submit" name="" value="Sign Up" />
+        <h6>Already a member ?<a href="#">Log in </a></h6>
       </form>
       <a href="#" class="close">+</a>
     </div>
@@ -124,19 +77,4 @@
       });
     </script>
   </body>
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"
-  ></script>
 </html>

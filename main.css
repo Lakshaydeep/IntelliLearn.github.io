@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  background: #22242a;
+  padding: 20px;
+
+  width: 100%;
+
+  z-index: 12;
+}
+
+.left_areas {
+  color: #fff;
+  background: #22242a;
+  margin: 0;
+  text-transform: lowercase;
+  font-size: 22px;
+  font-weight: 900;
+}
+.left_areas h3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#button {
+  padding: 5px;
+  background: #19b3d3;
+  text-decoration: none;
+  float: right;
+  margin-top: -30px;
+  margin-right: 40px;
+  border-radius: 2px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.5s;
+  transition-property: background;
+}
+
+#button:hover {
+  background: #343a40;
+}
+
+.sidebar {
+  background: #2f323a;
+  margin-top: 70px;
+  padding-top: 30px;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  transition: 0.5s;
+  transition-property: left;
+}
+
+.sidebar .profile_image {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+
+.sidebar h4 {
+  color: #ccc;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  color: rgba(255, 255, 255, 0.527);
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-property: background;
+}
+
+.sidebar a:hover {
+  background: #343a40;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.sidebar i {
+  padding-right: 10px;
+}
+
+label #sidebar_btn {
+  z-index: 1;
+  color: #fff;
+  margin-right: 20px;
+  cursor: pointer;
+
+  font-size: 20px;
+  margin-right: 40px;
+  transition: 0.4s;
+  transition-property: color;
+}
+
+label #sidebar_btn:hover {
+  color: #343a40;
+}
+
+.fa-phone {
+  transform: rotate(100deg);
+}
+h3 div {
+  margin: auto;
+}
+#check:checked ~ .sidebar {
+  left: -190px;
+}
+
+#check:checked ~ .sidebar a span {
+  display: none;
+}
+
+#check:checked ~ .sidebar a {
+  font-size: 20px;
+  margin-left: 170px;
+  width: 80px;
+}
+
+.content {
+  margin-left: 250px;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: 0.5s;
+}
+
+#check:checked ~ .content {
+  margin-left: 60px;
+}
+
+#check {
+  display: none;
+}
+
+.login h1 {
+  margin-top: auto;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: absolute;
+  margin-left: 40px;
+}
+.login h1 > img {
+  font-size: 20px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-top: 0px;
+}
+.login p {
+  margin-left: 4px;
+}
+.login {
+  width: 330px;
+  height: 500px;
+  background: #000;
+  color: white;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  display: flex;
+  display: none;
+  padding-left: 15px;
+}
+.login > form {
+  margin-top: 35px;
+}
+.login input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.login input[type="text"],
+input[type="Password"] {
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: white;
+  font-size: 16px;
+}
+.login input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #fb2525;
+  color: white;
+  font-size: 18px;
+  border-radius: 40px;
+  width: 300px;
+  margin-left: 0px;
+}
+
+.login input[type="submit"]:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+.login a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgray;
+}
+div > a.close {
+  font-size: 30px;
+  font-weight: 100;
+  margin-left: 290px;
+  position: absolute;
+  transform: rotate(45deg);
+  text-decoration: none;
+  outline: none;
+  color: white;
+}
+.card {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 100px;
+  font-size: 20px;
+  padding-right: 90px;
+}
+.card h5 {
+  font-size: 25px;
+}
+.card h6 {
+  font-size: 14px;
+}
+.card- {
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 100px;
+  font-size: 20px;
+  padding-right: 90px;
+}
+
+.card- h5 {
+  font-size: 25px;
+}
+.card- h6 {
+  font-size: 14px;
+}
