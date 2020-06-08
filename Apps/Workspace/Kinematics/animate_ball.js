@@ -11,8 +11,6 @@ let scaleInp = document.querySelector("#scale").querySelector("input");
 
 action.onclick = do_experiment;
 
-accParam.innerHTML = "<p> Hii </p> ";
-
 function do_experiment() {
   let width = 50;
   let velocity = velocityInp.value;
@@ -46,6 +44,8 @@ function do_experiment() {
       ball.style.top = "400px";
       clearInterval(goUp);
     });
+    accParam.textContent = String(acc * 100000);
+    velocityParam.textContent = String(velocity * 100);
     let curr_distance = 0;
     velocity = velocity + acc;
     pos = pos - velocity;
@@ -66,6 +66,7 @@ function do_experiment() {
   function moveDwn() {
     reset.addEventListener("click", function () {
       ball.style.top = "400px";
+
       clearInterval(goDwn);
     });
     velocity = velocity + acc;
@@ -77,6 +78,7 @@ function do_experiment() {
       ball.style.width = String(width) + "px";
       ball.style.height = String(width) + "px";
     } else if (pos > 401) {
+      velocityParam.textContent = velocity;
       clearInterval(moveUp);
     } else {
       ball.style.top = String(pos) + "px";
